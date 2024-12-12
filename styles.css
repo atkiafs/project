@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+.cover{
+    width: 80 %;
+    height: 250px;
+    position: relative;
+}
+
+/* Header and Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f7f6f6; /* Gold hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fcfafa;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #ffc107;
+    border: none;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+button.btn, .btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.btn:hover, .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+form .form-control {
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1rem;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table thead {
+    background-color: #ffc107;
+    color: #333;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Image Gallery */
+.gallery img {
+    width: 100%;
+    height:fit-content;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
